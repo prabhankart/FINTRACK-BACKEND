@@ -235,9 +235,9 @@ Through this project I gained hands-on experience in:
 
 Prabhankar Tiwari
 
-LinkedIn: https://linkedin.com/in/your-linkedin
+LinkedIn:www.linkedin.com/in/prabhankar-tiwari
 
-GitHub: https://github.com/your-github
+GitHub: https://github.com/prabhankart
 
 ---
 
