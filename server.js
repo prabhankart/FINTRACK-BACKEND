@@ -15,7 +15,11 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // React Vite default port
+  origin: [
+    'http://localhost:5173',
+    'https://fintrack-frontend-omega.vercel.app',
+    /\.vercel\.app$/
+  ],
   credentials: true
 }));
 app.use(express.json());
