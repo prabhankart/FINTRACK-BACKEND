@@ -1,6 +1,14 @@
 const dotenv = require('dotenv');
 dotenv.config();
+const fs = require('fs');
+const path = require('path');
 
+// Create uploads folder if not exists — needed on Render
+const uploadsDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadsDir)) {
+  fs.mkdirSync(uploadsDir, { recursive: true });
+  console.log('uploads/ folder created ✅');
+}
 // NOW check
 console.log('HF Token loaded:', process.env.HF_TOKEN ? 'YES ✅' : 'NO ❌');
 require('express-async-errors');
